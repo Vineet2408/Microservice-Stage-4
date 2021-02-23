@@ -2,6 +2,7 @@ package com.loan.Loan.Microservice.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.loan.Loan.Microservice.model.DummyModel;
@@ -10,8 +11,8 @@ import com.loan.Loan.Microservice.model.DummyModel;
 public class DummyController {
 
 	@GetMapping("/loans/{number}")
-	public void dummy()
+	public DummyModel dummy(@PathVariable String number)
 	{
-		new DummyModel("H00987987972342", "car" , 234343,3258,18 );
+		return new DummyModel("H00987987972342", "car" , 234343,3258,18 );
 	}
 }

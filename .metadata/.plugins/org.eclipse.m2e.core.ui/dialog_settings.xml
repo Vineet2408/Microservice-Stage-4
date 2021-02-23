@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\cognizant\MicorService\zuul-gateway"/>
 			<item value="D:\cognizant\MicorService\eureka-discovery-server"/>
 			<item value="D:\cognizant\MicorService\Loan-Microservice"/>
 			<item value="D:\cognizant\MicorService\account"/>

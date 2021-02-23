@@ -1,6 +1,7 @@
 package com.cognizant.account.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cognizant.account.model.DummyModel;
@@ -9,8 +10,8 @@ import com.cognizant.account.model.DummyModel;
 public class DummyController {
 
 	@GetMapping("/accounts/{number}")
-	public void dummy()
+	public DummyModel dummy(@PathVariable String number)
 	{
-		new DummyModel("00987987973432", "savings" , 234343 );
+		return new DummyModel("00987987973432", "savings" , 234343 );
 	}
 }

@@ -5,14 +5,20 @@ import org.springframework.stereotype.Component;
 @Component
 public class DummyModel {
 
-	String number;
-	String type;
+	private String number;
+	private String type;
 	
-	double loan;
-	double emi;
-	int tenure;
+	private double loan;
+	private double emi;
+	private int tenure;
 	
 	
+	/**
+	 * 
+	 */
+	public DummyModel() {
+		super();
+	}
 	public DummyModel(String number, String type, double loan, double emi, int tenure) {
 		super();
 		this.number = number;
