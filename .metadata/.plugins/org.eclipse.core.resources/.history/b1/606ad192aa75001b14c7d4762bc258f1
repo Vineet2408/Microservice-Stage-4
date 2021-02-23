@@ -1,0 +1,11 @@
+#routing for account serive
+zuul.routes.account-serice.url=http://localhost:8080
+
+#routing for loan serive
+zuul.routes.loan-serice.url=http://localhost:8081
+
+#disable load balancing
+ribbon.eureka.enabled=false
+
+#port for zuul proxy
+server.port=8083
